@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="app" lang="en">
 
 <head>
 
@@ -57,7 +57,7 @@
             <div class="collapse navbar-collapse" id="navbarExample">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item active px-lg-4">
-                        <a class="nav-link text-uppercase text-expanded" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link text-uppercase text-expanded" href="#home">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item px-lg-4">
                         <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
@@ -88,14 +88,14 @@
                         <img class="d-block img-fluid w-100" src="img/Rodada-CDMX.jpg" alt="">
                         <div class="carousel-caption d-none d-md-block">
                             <h3 class="text-shadow">Ciudad de México</h3>
-                            <p href="" class="text-shadow">Siempre algo nuevo por hacer.</p>
+                            <p href="#cdmx.html" class="text-shadow">Siempre algo nuevo por hacer.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img class="d-block img-fluid w-100" src="img/oaxaca.jpg" alt="">
                         <div class="carousel-caption d-none d-md-block">
-                            <h3 class="text-shadow">Oaxaca</h3>
-                            <p class="text-shadow">La mejor gastronomia mexicana.</p>
+                            <h3 href="/" class="text-shadow">Oaxaca</h3>
+                            <p href="/oaxaca.html" class="text-shadow">La mejor gastronomia mexicana.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -158,6 +158,8 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+    <script src="app.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/tether/tether.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
